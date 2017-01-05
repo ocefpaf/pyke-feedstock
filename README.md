@@ -11,6 +11,18 @@ Summary: Python Knowledge Engine and Automatic Python Program Generator.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyke-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyke-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyke-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyke-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyke-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyke-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyke/badges/version.svg)](https://anaconda.org/conda-forge/pyke)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyke/badges/downloads.svg)](https://anaconda.org/conda-forge/pyke)
+
 Installing pyke
 ===============
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pyke` available on your platform 
 ```
 conda search pyke --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyke-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyke-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyke-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyke-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyke-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyke-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyke/badges/version.svg)](https://anaconda.org/conda-forge/pyke)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyke/badges/downloads.svg)](https://anaconda.org/conda-forge/pyke)
 
 
 Updating pyke-feedstock
