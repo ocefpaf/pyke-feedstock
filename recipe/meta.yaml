@@ -13,8 +13,8 @@ source:
   sha1: 6f6bfab243564c17218d81fa40bc3bf24e0d5847  # [py3k]
 
 build:
-  number: 1001
-  script: python setup.py install
+  number: 1002
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -29,6 +29,7 @@ test:
 about:
   home: http://sourceforge.net/projects/pyke
   license: MIT
+  license_file: LICENSE
   summary: 'Python Knowledge Engine and Automatic Python Program Generator.'
 
 extra:
