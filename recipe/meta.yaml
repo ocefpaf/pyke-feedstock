@@ -13,7 +13,7 @@ source:
   sha1: 6f6bfab243564c17218d81fa40bc3bf24e0d5847  # [py3k]
 
 build:
-  number: 1002
+  number: 1003
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
