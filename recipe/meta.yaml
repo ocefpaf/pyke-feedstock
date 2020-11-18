@@ -5,23 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  fn: pyke-{{ version }}.zip  # [py2k]
-  url: http://download.sourceforge.net/pyke/pyke-{{ version }}.zip  # [py2k]
-  sha1: 2d657257fa2181d85fbfb69701b91226deb8b4e0  # [py2k]
-  fn: pyke3-{{ version }}.zip  # [py3k]
-  url: http://download.sourceforge.net/pyke/pyke3-{{ version }}.zip  # [py3k]
-  sha1: 6f6bfab243564c17218d81fa40bc3bf24e0d5847  # [py3k]
+  url: http://download.sourceforge.net/pyke/pyke3-{{ version }}.zip
+  sha256: b877b390e70a2eacc01d97c3a992fde947276afc2798ca3ac6c6f74c796cb6dc
 
 build:
-  number: 1003
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1004
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
   run:
-    - python
+    - python >=3
 
 test:
   imports:
@@ -31,7 +28,7 @@ about:
   home: http://sourceforge.net/projects/pyke
   license: MIT
   license_file: LICENSE
-  summary: 'Python Knowledge Engine and Automatic Python Program Generator.'
+  summary: Python Knowledge Engine and Automatic Python Program Generator
 
 extra:
   recipe-maintainers:
